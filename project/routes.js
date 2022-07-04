@@ -3,33 +3,33 @@ const { addBook,
     getBookById,
     editBookById,
     deleteBookById,
-  } = require('./handler');
+  } = require('./exception_handler');
   
   const routes = [
     {
       method: 'POST',
       path: '/books',
-      handler: addBookHndlr,
+      handler: addBook,
     },
     {
       method: 'GET',
       path: '/books',
-      handler: getAllBooksHndlr,
+      handler: getAllBooks,
     },
     {
       method: 'GET',
       path: '/books/{id}',
-      handler: getBookByIdHndlr,
+      handler: getBookById,
     },
     {
       method: 'PUT',
       path: '/books/{id}',
-      handler: editBookByIdHndlr,
+      handler: editBookById,
     },
     {
       method: 'DELETE',
       path: '/books/{id}',
-      handler: deleteBookByIdHndlr,
+      handler: deleteBookById,
     },
   ];
   
