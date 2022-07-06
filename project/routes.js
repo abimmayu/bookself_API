@@ -1,4 +1,4 @@
-const { addBook,
+const { BookHndlr,
     getAllBooks,
     getBookById,
     editBookById,
@@ -9,7 +9,7 @@ const { addBook,
     {
       method: 'POST',
       path: '/books',
-      handler: addBook,
+      handler: BookHndlr,
     },
     {
       method: 'GET',
